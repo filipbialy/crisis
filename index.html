@@ -150,9 +150,9 @@ kbd { font-family: var(--font-mono); font-size: 0.82rem; min-width: 52px; text-a
 .k-memo .from { color: var(--accent); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.78rem; }
 
 /* QR panel (projector) */
-#qr { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 20; background: #fff; color: #0b1626; border-radius: 12px; padding: 12px; display: grid; gap: 8px; justify-items: center; width: 212px; box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
-#qr b { font-size: 0.95rem; text-align: center; line-height: 1.25; }
-#qrCode svg { display: block; width: 188px; height: 188px; }
+#qr { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 20; background: #fff; color: #0b1626; border-radius: 8px; padding: 8px; display: grid; gap: 4px; justify-items: center; width: 130px; box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+#qr b { font-size: 0.75rem; text-align: center; line-height: 1.25; }
+#qrCode svg { display: block; width: 114px; height: 114px; }
 #qrFallback { font-size: 0.75rem; overflow-wrap: anywhere; text-align: center; }
 
 /* Phone view */
@@ -271,7 +271,7 @@ body.phone .log { min-height: 50vh; }
   </div>
 </div>
 <div id="toast" hidden></div>
-<div id="qr" hidden><b>Scan to follow on your phone</b><div id="qrCode"></div><div id="qrFallback" hidden></div></div>
+<div id="qr" hidden><b>Scan to follow</b><div id="qrCode"></div><div id="qrFallback" hidden></div></div>
 <script>
 /* qrcode-generator 1.4.4, (c) Kazuhiko Arase, MIT licence */
 //---------------------------------------------------------------------
